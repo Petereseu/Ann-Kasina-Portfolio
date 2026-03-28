@@ -316,10 +316,12 @@ color:#1f4fa3;
 }
 
 /* PRICE */
-.price{
+.price,
+.price-alt{
 font-size:26px;
 font-weight:bold;
 margin:10px 0;
+color:#000;
 }
 
 /* BUTTON */
