@@ -276,28 +276,32 @@ font-size:34px;
 margin-bottom:50px;
 }
 
+/* GRID LAYOUT */
 .pricing-wrapper{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:30px;
 max-width:1100px;
 margin:auto;
 }
 
+/* CARD STYLE */
 .pricing-card{
 background:white;
-padding:35px 25px;
+padding:40px 30px;
 border-radius:15px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-transition:all 0.3s ease;
-position:relative;
+border:1px solid #ddd;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
 }
 
 .pricing-card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+transform:translateY(-8px);
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
+/* ICON CIRCLE */
 .icon-circle{
 width:70px;
 height:70px;
@@ -306,38 +310,28 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-margin:auto;
-margin-bottom:20px;
+margin:0 auto 20px auto;
 font-size:28px;
 color:#1f4fa3;
 }
 
+/* PRICE */
 .price{
-font-size:28px;
+font-size:26px;
 font-weight:bold;
 margin:10px 0;
 }
 
-.price-alt{
-font-size:14px;
-color:#666;
-margin-bottom:20px;
-}
-
-.session-type{
-color:#444;
-margin-bottom:10px;
-}
-
+/* BUTTON */
 .book-btn{
 display:inline-block;
-padding:12px 24px;
+margin-top:20px;
+padding:12px 28px;
 background:#1f4fa3;
 color:white;
-border-radius:8px;
 text-decoration:none;
-font-size:15px;
-transition:0.3s;
+border-radius:8px;
+font-weight:600;
 }
 
 .book-btn:hover{
@@ -365,6 +359,21 @@ font-size:24px;
 
 .price{
 font-size:24px;
+}
+
+}
+@media (max-width:900px){
+
+.pricing-wrapper{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:600px){
+
+.pricing-wrapper{
+grid-template-columns:1fr;
 }
 
 }
